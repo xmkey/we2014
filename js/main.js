@@ -145,5 +145,8 @@ $(document).ready(function() {
         sectionContainer: ".page",
         responsiveFallback: 600,
         loop: false
-      });
+    });
+    $("#view-rule").click(function(){
+        $(".main").moveDown();
+    })
 });

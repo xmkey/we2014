@@ -1,7 +1,11 @@
 /*onepage-scroll start*/
+html{
+  overflow-y:scroll;
+  overflow-x:auto; 
+}
 body, html {
   margin: 0;
-  overflow: hidden;
+  
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
@@ -72,23 +76,63 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .bg{width: 100%;height:100%;display: block;position: absolute;top:0px;left:0px;}
-.bg img{width: 100%;height:100%;}
+.bg img{width: 100%;height:100%;display: none;}
 #starfield{position: absolute;top:0px;left:0px;}
 .wrapper {
 	height: 100% !important;
 	height: 100%;
 	margin: 0 auto; 
-	overflow: hidden;
+	text-align:center;
 }
+.main{
 
-.main .page .page_container {
+  width: 1000px;
+  margin:0 auto;
+
+}
+.main .page .page-container {
+  
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  vertical-align:middle;
+  display:table-cell;
   position: relative;
-  top: 25%;
-  margin: 0 auto 0;
-  max-width: 950px;
-  z-index: 3;
+
 }
 .main .page  {
-  overflow: hidden;
+  /*overflow: hidden;*/
+  display:table;
+  position: absolute;
+  top: 0%;
+  left: 0px;
 }
 
+
+.page1 .page-container{height:620px;}
+.main .page2{top:100%;}
+.mod-sprite {display:block;overflow: hidden;zoom:1;position: relative;margin:0px auto;}
+.mod-sprite span{position:absolute;width:1000px;height:500px;background:url(../img/sprite.png) 0 0 no-repeat;display:block;/*_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", src="../img/sprite.png",sizingMethod="image");*/}
+
+.sprite-logo{width:128px;height:90px;margin-top:40px;margin-bottom:20px;}
+.sprite-logo span{left:0px;top:0px;}
+
+.sprite-info{width:205px;height:60px;margin-bottom:60px;}
+.sprite-info span{left:0px;top:-100px;}
+
+.sprite-txt1{width:700px;height:70px;margin-bottom:0px;}
+.sprite-txt1 span{left:0px;top:-160px;}
+
+.sprite-txt2{width:700px;height:70px;margin-bottom:90px;}
+.sprite-txt2 span{left:0px;top:-240px;}
+
+.btn{display: block;width:206px;height:56px;line-height: 56px;font-size: 16px;color:#ffffff;background: #edab11;margin:0 auto;text-decoration: none;-webkit-transition：}
+.btn:hover{background:#dea00e;}
+.btn-history{font-size: 14px;width:54px;height:45px;color:#fff;text-align: center;background:#0a2067;background:rgba(3,33,122,.6);border:#000000 1px solid;padding-top:9px;display: block;text-decoration: none;}
+.btn-history:hover{background:#306ad7 }
+.qr-thumb{display: block;width:54px;height:54px;border:#000000 1px solid;background:#fff url(../img/sprite.png) -80px -320px no-repeat;}
+.mod-float{position: relative;width: 100%;height:0px;}
+.mod-float .btn-history{top:490px;right:0px;position: absolute;}
+.mod-float .qr-thumb{top:546px;right:0px;position: absolute;}
+.mod-float .qr{bottom:-1px;right:56px;position: absolute;}
+.mod-float .qr img{display: block;width: 200px;height:200px;}
