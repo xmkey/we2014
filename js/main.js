@@ -146,11 +146,11 @@ start();
 
 $(document).ready(function() {
     var screenW=$("body").width();
-    $(".mod-copyright").css({
-        width:screenW,
-        left:"50%",
-        "margin-left":-screenW/2
-    })
+    // $(".mod-copyright").css({
+    //     width:screenW,
+    //     left:"50%",
+    //     "margin-left":-screenW/2
+    // })
 	$(".main").onepage_scroll({
         sectionContainer: ".page",
         responsiveFallback: 20,
