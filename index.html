@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="css/main.css" media="screen" />
 </head>
 <body>
+  <ul class="onepage-pagination">
+    <li><a data-index="1" href="#1" class="active"></a></li>
+    <li><a data-index="2" href="#2"></a></li>
+  </ul>
   <div class="bg">
     <img src="img/bg.jpg">
     <canvas id="starfield"></canvas>
@@ -36,7 +40,7 @@
         <div class="page-container">
           <div class="mod-float">
             <a class="btn-history" href="#">回顾</br>2013</a>
-            <div class="qr-thumb">
+            <div class="qr-thumb" id="qr-view">
               <div class="qr">
                 <img src="img/qr1.jpg">
               </div>
@@ -53,18 +57,13 @@
       
       <div class="page section page2">
         <div class="page-container">
-          <div class="mod-sprite sprite-logo"><span></span></div>
-          <div class="mod-sprite sprite-info"><span></span></div>
-          <div class="mod-preview">
-            <img src="#">
-          </div>
           <div class="mod-steps">
-            <div class="step step1">
+            <div class="step step1 on">
               <div class="num">
                 01
               </div>
               <div class="desc">
-                描述
+                用户分享活动链接给一个好友，邀请好友协助开启未来之门；
               </div>
             </div>
             <div class="step step2">
@@ -72,7 +71,7 @@
                 02
               </div>
               <div class="desc">
-                描述
+                分享给好友后，用户需要保持按住2个拇指指纹，等待好友打开链接进入活动；
               </div>
             </div>
             <div class="step step3">
@@ -80,7 +79,7 @@
                 03
               </div>
               <div class="desc">
-                描述
+                好友进入后，按下2个拇指指纹，未来之门将会为你们而开启，用户将获得2014WE大会视频直播码；
               </div>
             </div>
             <div class="step step4">
@@ -88,7 +87,7 @@
                 04
               </div>
               <div class="desc">
-                描述
+                若用户中途停止按压指纹，或好友一直未按下指纹，未来之门将无法开启；
               </div>
             </div>
             <div class="step step5">
@@ -96,13 +95,36 @@
                 05
               </div>
               <div class="desc">
-                描述
+                好友可点击“我也要WE大会直播码”参与活动；
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="mod-notice">
+              <div class="qr">
+                <img src="img/qr2.png">
+              </div>
+              <div class="desc">
+                赶紧关注腾讯大学</br>公众号回复<strong>ＷＥ</strong>或者</br>点击精品活动－－</br><strong>２０１４ＷＥ大会</strong></br>按钮一起来参与吧！
               </div>
             </div>
           </div>
+          <div class="mod-sprite sprite-logo"><span></span></div>
+          <div class="mod-sprite sprite-info"><span></span></div>
+          <div class="mod-preview">
+            <img src="img/preview1.png" class="img1 active">
+            <img src="img/preview2.png" class="img2">
+            <img src="img/preview3.png" class="img3">
+            <img src="img/preview4.png" class="img4">
+            <img src="img/preview5.png" class="img5">
+          </div>
+          <div class="block"></div>
+         
         </div>
       </div>
-      
+      <div class="mod-copyright">
+        <p>we@tencent.com中国广东省深圳市南山区科技中一路腾讯大厦</p>
+        <p>Copyright © 1998 - 2014 Tencent. All Rights Reserved.腾讯公司 版权所有</p>
+      </div>
       
     </div>
     
